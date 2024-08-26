@@ -56,14 +56,26 @@
 //     }
 // };
 
+
+// lets create symbol
+const mysmb = Symbol("my")
 const  person ={
-    Name: 'Rashid',
+    fname: 'Rashid',
     lastName: 'Hussain',
+    [mysmb] : 'Rashid',
     Age: 24,
     City: 'Bangalore',
     Hobbies: ['Reading', 'Cricket', 'Coding']
 }
-person.nationality ="Pakistani";
-delete person.Age
-console.log(person)
+// person.nationality ="Pakistani";
+// delete person.Age
+// console.log(person)
+// console.log(person[mysmb] )
 
+
+
+// const {lastName:n} = person
+console.log(person["fname"] + " is " + person["lastName"] + " years old " + person["Age"])
+
+
+// console.log(n)
