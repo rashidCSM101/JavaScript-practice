@@ -1,5 +1,5 @@
 const cars = ["Saab", "Volvo", "BMW"];
 
-cars.forEach(()=> {
-    console.log("Hello world");
+cars.forEach((val)=> {
+    console.log(val);
 })
