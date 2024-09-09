@@ -18,5 +18,9 @@
         "titleBar.inactiveBackground": "#12407699",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#124076"
+    "peacock.color": "#124076",
+    "cSpell.enableFiletypes": [
+        "!javascript"
+    ],
+    "editor.fontFamily": "'Fira Code',Consolas, 'Courier New', monospace"
 }

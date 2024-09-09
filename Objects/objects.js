@@ -56,17 +56,28 @@
 //     }
 // };
 
+// ! adding key value pairs
+// const  person ={
+//     fname: 'Rashid',
+//     lastName: 'Hussain',
+//     Age: 24,
+//     City: 'Bangalore',
+//     Hobbies: ['Reading', 'Cricket', 'Coding']
+// }
+// person.email = 'sayed@gmail.com';
+// console.log(person);
 
-// lets create symbol
-const mysmb = Symbol("my")
-const  person ={
-    fname: 'Rashid',
-    lastName: 'Hussain',
-    [mysmb] : 'Rashid',
-    Age: 24,
-    City: 'Bangalore',
-    Hobbies: ['Reading', 'Cricket', 'Coding']
-}
+
+//! lets create symbol
+// const mysmb = Symbol("my")
+// const  person ={
+//     fname: 'Rashid',
+//     lastName: 'Hussain',
+//     [mysmb] : 'Rashid',
+//     Age: 24,
+//     City: 'Bangalore',
+//     Hobbies: ['Reading', 'Cricket', 'Coding']
+// }
 // person.nationality ="Pakistani";
 // delete person.Age
 // console.log(person)
@@ -75,7 +86,7 @@ const  person ={
 
 
 // const {lastName:n} = person
-console.log(person["fname"] + " is " + person["lastName"] + " years old " + person["Age"])
+// console.log(person["fname"] + " is " + person["lastName"] + " years old " + person["Age"])
 
 
 // console.log(n)

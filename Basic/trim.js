@@ -4,8 +4,8 @@
 
 // syntax .trim().
 
-let myName= '   Rashid    ';
+let myName= '   Rashid Sayed   ';
 console.log(myName.length);
 
 let myName2=myName.trim();
-console.log(myName2.length);
+console.log(myName2,myName2.length);

@@ -5,35 +5,41 @@
     <meta charset="utf-8">
     <title>JavaScript getElementsByName Demo</title>
 </head>
-
 <body>
-<p>Please rate the service:</p>
+
+
+    <div id="pera" name="peraName">hello</div>
+    <div class="div">hello</div>
+    <!-- <p id="pera"> hello</p> -->
+    <!-- <p id="pera">Lorem ipsum dolor sit amet.</p> -->
+    <!-- <p class="h1">Lorem ipsum dolor sit amet.</p> -->
+    <!-- <h4 class="heading" id="two">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, totam!</h4> -->
+    <!-- <ul>
+        <li class="list" id="lione">one</li>
+        <li class="list" id="kitwo">two</li>
+        <li class="list" id="lithree">three</li>
+    </ul> -->
+    <!-- <script src="app.js"></script> -->
+    <script src="getAtribute.js"></script>
+    <!-- <p>Please rate the service:</p>
 <p>
     <label for="very-poor">
         <input type="radio" name="rate" value="Very poor" id="very-poor"> Very poor
     </label>
-
     <label for="poor">
         <input type="radio" name="rate" value="Poor" id="poor"> Poor
-    </label>
     <label for="ok">
         <input type="radio" name="rate" value="OK" id="ok"> OK
-    </label>
     <label for="good">
         <input type="radio" name="rate" value="Good"> Good
-    </label>
     <label for="very-good">
         <input type="radio" name="rate" value="Very Good" id="very-good"> Very Good
-    </label>
 </p>
-<p>
     <button id="btnRate">Submit</button>
-</p>
 <p id="output"></p>
 <script>
     let btn = document.getElementById('btnRate');
     let output = document.getElementById('output');
-
     btn.addEventListener('click', () => {
         let rates = document.getElementsByName('rate');
         rates.forEach((rate) => {
@@ -41,9 +47,7 @@
                 output.innerText = `You selected: ${rate.value}`;
             }
         });
-
     });
-</script>
+</script> -->
 </body>
-
 </html>
