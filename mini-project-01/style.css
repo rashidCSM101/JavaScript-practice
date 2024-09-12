@@ -1,28 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
 }
-.main-container{
+body{
+    background: #33372C;
+    color: aliceblue;
+}
+.navbar {
+    background-color: #005fe5;
+    padding: 1em;
+    color: #fff;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-.sub-div{
-    margin: 15px auto;
-}
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav-links {
+    font-weight: 500;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: space-between;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: #ccc;
+  }
 
-.color-set{
-    background: #fc0606;
-    width: 300px;
-    height: 100px;
-}
-.btn-one{
-    background: #f979f0;
-    color: blue;
-    font-size: 20px;
-    padding: 5px 37px;
+  .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-}
+    cursor: pointer;
+    margin: 2rem 0;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+    margin: 2rem 0;
+  }
+  .form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #000;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
