@@ -42,22 +42,47 @@
 // ||    getElementByClassName & querySelectorAll
 
 // < getElementByClassName
-// const classElement = document.getElementsByClassName("nav-item");
+// const classElement = document.getElementsByClassName("nav-item"); 
+//~ HTML collection so we can't use forEach Method to iterate the HTML collection 
+// ~ simple for loop and for Of loop we can use 
 // console.log(classElement);
 
+// const tagName = document.getElementsByTagName("a"); 
+// $ simple for loop
+// for (let i = 0; i < tagName.length; i++) {
+//     const tagelement = tagName[i];
+//     tagelement.style.backgroundColor ="cyan"
+//     tagelement.style.color="pink"
+//     tagelement.style.fontWeight="bold"
+// }
+// $ for of loop
+// for(let element of tagName){
+//     element.style.backgroundColor ="cyan"
+//     element.style.color="pink"
+//     element.style.fontWeight="bold"
+// }
+
+// ^ Pro Tips
+// let classElement = document.getElementsByClassName("nav-item"); 
+// //classElement =Array.from(classElement); //~ HTML collection convert into array.
+// console.log(Array.isArray(classElement)); //$ output==> True
+// classElement.forEach((elm) => {
+//     return elm.style.backgroundColor ="Red";
+// });
 
 // < querySelectorAll
 
 // const allLinks = document.querySelectorAll("a");
-const allLinks = document.querySelectorAll(".nav-links .nav-item");
+// const allLinks = document.querySelectorAll(".nav-links .nav-item");
+// ~ NodeList ==>simple for loop and for Of loop we can use and also use forEach Method
 // console.log(allLinks);
 
 // < ForEach loop
-allLinks.forEach((link)=>{
-    // return link.setAttribute("href" , "valueChange");
-    return link.getAttribute("href");
-});
-console.log(allLinks);
+// allLinks.forEach((link)=>{
+//  //  return link.setAttribute("href" , "valueChange");
+//     return link.getAttribute("href");
+// });
+// console.log(allLinks);
 
 // ^ Pro Tips
 // allLinks.forEach(link => link.style.color = "red");
@@ -66,4 +91,18 @@ console.log(allLinks);
 // });
 
 // ||    getElementsByTagName
+
+
+
+
+
+
+
+
+
+// > innerHTML
+// const inptElement = document.querySelector(".nav-links");
+// console.log(inptElement.innerHTML);
+// inptElement.innerHTML="<h1> hello</h2>"
+
 
