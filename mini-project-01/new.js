@@ -37,3 +37,33 @@
 // console.log(classElement.setAttribute('name','showMore'));
 // console.log(classElement[0].getAttribute('class'));
 
+
+
+// ||    getElementByClassName & querySelectorAll
+
+// < getElementByClassName
+// const classElement = document.getElementsByClassName("nav-item");
+// console.log(classElement);
+
+
+// < querySelectorAll
+
+// const allLinks = document.querySelectorAll("a");
+const allLinks = document.querySelectorAll(".nav-links .nav-item");
+// console.log(allLinks);
+
+// < ForEach loop
+allLinks.forEach((link)=>{
+    // return link.setAttribute("href" , "valueChange");
+    return link.getAttribute("href");
+});
+console.log(allLinks);
+
+// ^ Pro Tips
+// allLinks.forEach(link => link.style.color = "red");
+// allLinks.forEach((link) => {
+//     return link.style.color = "red"
+// });
+
+// ||    getElementsByTagName
+
